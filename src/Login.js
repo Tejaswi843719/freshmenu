@@ -1,15 +1,14 @@
 import React, { Component } from "react"
-//import "./App.css"
 import firebase from "firebase"
+import './Home.css';
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"
 
 firebase.initializeApp({
   apiKey: "AIzaSyBUJKWdJSl0tVUaXIRRC9S8L3walN0ELXc",
   authDomain: "freshmenu-cfc5d.firebaseapp.com"
 })
-
 class Login extends Component {
-  state = { isSignedIn: false }
+   state = { isSignedIn: false }
   uiConfig = {
     signInFlow: "popup",
     signInOptions: [
@@ -34,16 +33,17 @@ class Login extends Component {
   render() {
     return (
      
-      <div className="App">
+      <div className="App jumbotron pb-5 mb-5 bg-success" id="bg" style={{backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
         {this.state.isSignedIn ? (
           <span>
-            <div>Loged In!</div>
-            <button onClick={() => firebase.auth().signOut()}>Log out!</button>
-            <h1>Welcome {firebase.auth().currentUser.displayName}</h1>
-            <img
+            <div className="text-primary "><b><h4>You are successfully Loged In!</h4></b></div><br/>
+            <h2>Welcome {firebase.auth().currentUser.displayName}</h2><br/>
+            <img className="rounded-circle"
               alt="profile picture"
               src={firebase.auth().currentUser.photoURL}
             />
+             <br/><br/>
+            <button className="btn btn-danger" onClick={() => firebase.auth().signOut()}>Log out!</button>
           </span>
         ) : (
           <StyledFirebaseAuth

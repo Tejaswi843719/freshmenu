@@ -22,12 +22,12 @@ const Home = () => {
     }, []);
     return (
         <>
-        <div className="ml-5"><button className="btn btn-light bg-white font-weight-bold text-dark ml-5" onClick={getUserGeolocationDetails}>Current Location</button></div>
-      <div>{details && <div className="list-group-item">
+        <div className="ml-5"><button className="btn btn-light bg-white font-weight-bold text-dark ml-5"  onClick={getUserGeolocationDetails}>Current Location</button></div>
+      <div>{details && <div className="ml-5">
            Your Current Location : {`${details.city}, ${details.state}, ${details.country_name}(${details.country_code}),Pincode:${details.postal}`}
          </div> }</div>
            <Slide/>
-           <div className="container bg-warning p-1 mt-2 text-center"><b>Safety assured meals and contactless delivery</b></div>
+           <div className="container bg-warning p-1 mt-2 text-dark text-center"><b>Safety assured meals and contactless delivery</b></div>
             <div className="container p-3" >
         
                     <div className="row bg-dark" >
@@ -77,13 +77,13 @@ const Home = () => {
             <div className="bg-dark">
                 <div className="row ml-5" >
                     <div className="col-sm-4 mx-auto img-responsive">
-                        <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_210,h_398/4x_-_No_min_order_x0bxuf" height="200" width="200" /><br/><b className="text-white">No Minimum Order</b>
+                        <img className="ml-5" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_210,h_398/4x_-_No_min_order_x0bxuf" height="200" width="200" /><br/><b className="text-white ml-5">No Minimum Order</b>
                     </div>
                     <div className="col-sm-4 mx-auto img-responsive">
-                        <img src="http://www.trackinghawk.com/img/GPS-Tracking-Icon-300x300.png" height="200" width="200" /><br/><b className="text-white">Live Order Tracking</b>
+                        <img className="ml-4" src="http://www.trackinghawk.com/img/GPS-Tracking-Icon-300x300.png" height="200" width="200" /><br/><b className="text-white ml-5">Live Order Tracking</b>
                     </div>
                     <div className="col-sm-4 mx-auto img-responsive">
-                        <img src="https://www.houstonfood2u.com/images/logos/original-logos-500.png" height="200" width="200" /><br/><b className="text-white">Lightning-Fast Delivery</b>
+                        <img className="ml-4" src="https://www.houstonfood2u.com/images/logos/original-logos-500.png" height="200" width="200" /><br/><b className="text-white ml-5">Lightning-Fast Delivery</b>
                     </div>
                 </div>
            
@@ -91,16 +91,14 @@ const Home = () => {
             </div>
             <div>
                 <div className="row bg-warning" >
-                    <div className="col-1 ml-5">
-                        <img src="https://www.freshmenu.com/images/fm-header-logo.svg" height="100" width="170" />
+                    <div className="col-lg-4 col-md-5 col-sm-12 mb-3">
+                        <img className="ml-5"src="https://www.freshmenu.com/images/fm-header-logo.svg" height="100" width="170" />
                     </div>
-                    <div className="col-6 mt-4">
-                    <h4 className="text-center text-dark ml-5">Copyrights Reserverd 2020<sup>©</sup></h4>
-                    </div>
-                    <div className="col-2">
-                    <img className="mt-3 ml-5" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/play_ip0jfp" height="50" width="150" /></div>
-                    <div className="col-2">
-                    <img className="mt-3" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/iOS_ajgrty" height="50" width="150" />
+                
+                    <div className="col-lg-4 col-md-5 col-sm-12 mb-3">
+                    <img className="mt-4 ml-5" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/play_ip0jfp" height="50" width="150" /></div>
+                    <div className="col-lg-4 col-md-5 col-sm-12 mb-3">
+                    <img className="mt-4 ml-5" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/iOS_ajgrty" height="50" width="150" />
                     </div>
                     
                    
@@ -110,8 +108,11 @@ const Home = () => {
                          <h4 className="text-white">Follow Us On</h4>
                         <img className=" ml-3" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-facebook_tfqsuc" height="30" width="30" />
                         <img className=" ml-3" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-instagram_b7nubh" height="30" width="30" />
-                        <img className=" ml-3" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-twitter_gtq8dv" height="30" width="30" />  
+                        <img className=" ml-3" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-twitter_gtq8dv" height="30" width="30" /> 
+                        <br/>
+                             
                 </div>
+                <div><h4 className="text-center text-white pb-3 mt-2">Copyrights Reserverd 2020<sup>©</sup></h4></div>
                 </div>
             </div>
 

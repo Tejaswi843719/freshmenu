@@ -23,7 +23,7 @@ const Cart = () => {
                 {cart.map(({ img, name, type, rates, price, quantity }, index) => (
                     <div className="row w-80 text-center mt-2">
                         <div className="col mt-5"><button onClick={() => removeUpdate(index)} className="btn btn-dark btn-lg">x</button></div>
-                        <div className="col"><img src={img} alt="" height="100" width="120" /></div>
+                        <div className="col img-fluid"><img src={img} alt="" height="100" width="120" /></div>
                         <div className="col-3 h5 mt-5">{name}</div>
                         <div className="col h5 mt-5">₹{price}</div>
                         <div className="col mt-5">

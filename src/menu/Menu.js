@@ -36,14 +36,14 @@ const Menu = () => {
             <div className="container ">
                 <Router>
                     <div className="row bg-light mt-3">
-                        <div className="col"><Link style={{textDecoration:"none"}}to="/burgers"><h5 className="mt-3 text-dark">Burgers</h5></Link></div>
-                        <div className="col"><Link style={{textDecoration:"none"}}to="/pizza"><h5 className="mt-3 text-dark">Pizza</h5></Link></div>
-                        <div className="col"><Link style={{textDecoration:"none"}}to="/pasta"><h5 className="mt-3 text-dark">Pasta</h5></Link></div>
-                        <div className="col"><Link style={{textDecoration:"none"}}to="/biryani"><h5 className="mt-3 text-dark">Biryani</h5></Link></div>
-                        <div className="col"><Link style={{textDecoration:"none"}}to="/noodles"><h5 className="mt-3 text-dark">Noodles</h5></Link></div>
-                        <div className="col"><Link style={{textDecoration:"none"}}to="/desserts"><h5 className="mt-3 text-dark">Desserts</h5></Link></div>
-                        <div className="col"><Link style={{textDecoration:"none"}}to="/sandwich"><h5 className="mt-3 text-dark">Sandwiches</h5></Link></div>
-                        <div className="col"><Link style={{textDecoration:"none"}}to="/paratha"><h5 className="mt-3 text-dark">Paratha</h5></Link></div>
+                        <div className="col-lg-3 col-md-5 col-sm-3 mb-3"><Link style={{textDecoration:"none"}}to="/burgers"><h5 className="mt-3 text-dark">Burgers</h5></Link></div>
+                        <div className="col-lg-3 col-md-5 col-sm-3 mb-3"><Link style={{textDecoration:"none"}}to="/pizza"><h5 className="mt-3 text-dark">Pizza</h5></Link></div>
+                        <div className="col-lg-3 col-md-5 col-sm-3 mb-3"><Link style={{textDecoration:"none"}}to="/pasta"><h5 className="mt-3 text-dark">Pasta</h5></Link></div>
+                        <div className="col-lg-3 col-md-5 col-sm-3 mb-3"><Link style={{textDecoration:"none"}}to="/biryani"><h5 className="mt-3 text-dark">Biryani</h5></Link></div>
+                        <div className="col-lg-3 col-md-5 col-sm-3 mb-3"><Link style={{textDecoration:"none"}}to="/noodles"><h5 className="mt-3 text-dark">Noodles</h5></Link></div>
+                        <div className="col-lg-3 col-md-5 col-sm-3 mb-3"><Link style={{textDecoration:"none"}}to="/desserts"><h5 className="mt-3 text-dark">Desserts</h5></Link></div>
+                        <div className="col-lg-3 col-md-5 col-sm-3 mb-3"><Link style={{textDecoration:"none"}}to="/sandwich"><h5 className="mt-3 text-dark">Sandwiches</h5></Link></div>
+                        <div className="col-lg-3 col-md-5 col-sm-3 mb-3"><Link style={{textDecoration:"none"}}to="/paratha"><h5 className="mt-3 text-dark">Paratha</h5></Link></div>
                     </div>
                     <Route exact path="/burgers" component={Burgers}></Route>
                     <Route exact path="/pizza" component={Pizza}></Route>

@@ -7,7 +7,7 @@ const Pizza = () => {
     return (
         <div className="row mt-4 ">
             {pizza.map(({ img, name, type, rates, price }, index) => (
-                <div className="col-4 mb-3">
+                <div className="col-lg-4 col-md-5 col-sm-12 mb-3">
                     <div className="card">
                         <img className="card-img-top" src={img} height="250" width="150" />
                         <div className="card-body">
